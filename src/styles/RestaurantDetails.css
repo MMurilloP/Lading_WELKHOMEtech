@@ -1,0 +1,50 @@
+.restaurant-details-title-condition {
+  font-size: 50px;
+  margin-bottom: 50px;
+  background: linear-gradient(45deg, #ee6a6e, #b19d99);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: transform 0.3s ease-in-out;
+  margin-top: 300px;
+}
+.restaurant-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.restaurant-details-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.restaurant-details-restaurant-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.restaurant-details-restaurant-address,
+.restaurant-details-restaurant-cuisine {
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+}
+
+.restaurant-details-restaurant-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.restaurant-details-title-condition {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Estilos para los formularios ReservationForm y RegistrationForm */
+/* ... */

@@ -35,11 +35,6 @@ const RestaurantDetails = ({ selectedRestaurant }) => {
       <p className="restaurant-details-restaurant-cuisine">
         Tipo de cocina: {selectedRestaurant.cuisine}
       </p>
-      <img
-        className="restaurant-details-restaurant-image"
-        src={selectedRestaurant.img}
-        alt=""
-      />
 
       <ReservationForm onSubmit={handleReservationSubmit} />
       <RegistrationForm onSubmit={handleRegistrationSubmit} />

@@ -4,37 +4,37 @@
   align-items: center;
   justify-content: center;
   background-color: #f5f5f5;
-  border-radius: 0.625rem; /* 10px en rem */
-  padding: 1.25rem; /* 20px en rem */
+  border-radius: 0.625rem;
+  padding: 1.25rem;
   width: auto;
   margin-bottom: 1rem;
   box-shadow: 0px 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
 }
 
 .reservation-form-title {
-  font-size: 1.5rem; /* 24px en rem */
-  margin-bottom: 1.25rem; /* 20px en rem */
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .reservation-form label {
-  font-size: 1rem; /* 16px en rem */
-  margin-bottom: 0.5rem; /* 8px en rem */
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .reservation-form input {
   width: 100%;
-  padding: 0.625rem; /* 10px en rem */
-  border: 0.0625rem solid #ccc; /* 1px en rem */
-  border-radius: 0.3125rem; /* 5px en rem */
-  margin-bottom: 1rem; /* 16px en rem */
+  padding: 0.625rem;
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.3125rem;
+  margin-bottom: 1rem;
 }
 
 .reservation-form button {
   background-color: #333;
   color: #fff;
-  padding: 0.625rem 1.25rem; /* 10px 20px en rem */
+  padding: 0.625rem 1.25rem;
   border: none;
-  border-radius: 0.3125rem; /* 5px en rem */
+  border-radius: 0.3125rem;
   cursor: pointer;
 }
 

@@ -8,7 +8,7 @@ const NavBar = () => {
 
   return (
     <nav className="navbar">
-      <div className="app-title">SaberExplorer</div>
+      <div className="app-title">SaborExplorer</div>
       <ul className="navbar-links">
         <li>
           <a href="#" onClick={handleInicioClick}>

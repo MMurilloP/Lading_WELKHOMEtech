@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import RestaurantList from "./components/RestaurantList";
 import RestaurantDetails from "./components/RestaurantDetails";
@@ -8,6 +8,9 @@ import Footer from "./components/Footer";
 
 const App = () => {
   const [selectedRestaurant, setSelectedRestaurant] = useState(null);
+  const [showDetails, setShowDetails] = useState(false);
+  const [showList, setShowList] = useState(false);
+  const [showWelcomeMessage, setShowWelcomeMessage] = useState(true);
 
   const restaurants = [
     {
@@ -51,17 +54,36 @@ const App = () => {
     setSelectedRestaurant(restaurant);
   };
 
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShowWelcomeMessage(false);
+      setShowList(true);
+      setShowDetails(true);
+    }, 2000);
+
+    return () => clearTimeout(timeout);
+  }, []);
+
   return (
     <div className="app-wrapper">
       <NavBar />
       <main className="app-container">
         <div className="app-content">
-          <RestaurantList
-            restaurants={restaurants}
-            onSelectRestaurant={handleSelectRestaurant}
-          />
-
-          <RestaurantDetails selectedRestaurant={selectedRestaurant} />
+          {showWelcomeMessage && (
+            <h2 className="welcome-msg">
+              Bienvenidos <br />a <br />
+              SaborExplorer
+            </h2>
+          )}
+          {showList && (
+            <RestaurantList
+              restaurants={restaurants}
+              onSelectRestaurant={handleSelectRestaurant}
+            />
+          )}
+          {showDetails && (
+            <RestaurantDetails selectedRestaurant={selectedRestaurant} />
+          )}{" "}
         </div>
         <div className="background-video">
           <video autoPlay loop muted>

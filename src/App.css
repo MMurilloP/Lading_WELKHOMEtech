@@ -1,3 +1,15 @@
+.welcome-msg {
+  font-size: 10rem;
+  margin-top: -20rem;
+  background: linear-gradient(45deg, #ee6a6e, #74635f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .app-container {
   margin-top: 150px;
   display: flex;
@@ -37,6 +49,11 @@
 }
 
 @media (max-width: 768px) {
+  .welcome-msg {
+    font-size: 3rem;
+    margin-top: -30rem;
+    text-align: center;
+  }
   .app-container {
     padding: 20px;
   }

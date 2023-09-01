@@ -47,11 +47,10 @@
   border-radius: 1.25rem;
 }
 
-@media(max-width: 767px){
+@media (max-width: 767px) {
   .restaurant-list {
     margin-top: 45rem;
     margin-left: 0.3rem;
-    
   }
 
   .restaurant-list-title {

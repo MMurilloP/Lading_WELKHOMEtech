@@ -13,7 +13,7 @@
 .restaurante-details-container {
   background-color: rgba(245, 222, 179, 0.7);
   padding: 0.3125rem;
-  border-radius: 0.3125rem;
+  border-radius: 0.5rem;
 }
 
 .restaurant-details-title {
@@ -41,7 +41,7 @@
 }
 
 .restaurant-details-title-condition {
-  margin-top: 25rem; 
+  margin-top: 25rem;
   font-size: 3.2rem;
   margin-bottom: 1.875rem;
   background: linear-gradient(45deg, #ee6a6e, #74635f);
@@ -54,27 +54,25 @@
   justify-content: center;
 }
 
-
-@media (max-width: 767rem) {
+@media (max-width: 767px) {
   .restaurant-details {
     width: 19rem;
-
   }
   .restaurante-details-container {
     width: 19rem;
   }
   .restaurant-details-title {
     font-size: 1.5rem;
-
+    margin-top: 4rem;
+  }
+  .restaurant-details-title-condition {
+    display: none;
   }
   .restaurant-details-restaurant-name {
     font-size: 1.5rem;
-
   }
   .restaurant-details-restaurant-address,
-.restaurant-details-restaurant-cuisine {
-  font-size: 1rem;
-
-}
-
+  .restaurant-details-restaurant-cuisine {
+    font-size: 1rem;
+  }
 }

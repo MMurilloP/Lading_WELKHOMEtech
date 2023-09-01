@@ -1,21 +1,37 @@
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import "../styles/NavBar.css";
 
 const NavBar = () => {
+  const handleInicioClick = () => {
+    window.location.reload();
+  };
+
   return (
     <nav className="navbar">
-      <div className="navbar-logo">SaberExplorer</div>
+      <div className="app-title">SaberExplorer</div>
       <ul className="navbar-links">
         <li>
-          <a href="#">Inicio</a>
+          <a href="#" onClick={handleInicioClick}>
+            Inicio
+          </a>
         </li>
         <li>
-          <a href="#">Menú</a>
+          <a
+            href="https://www.linkedin.com/in/manuel-murillo-peira/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin className="logo-linkedin" />
+          </a>
         </li>
         <li>
-          <a href="#">Reservas</a>
-        </li>
-        <li>
-          <a href="#">Contacto</a>
+          <a
+            href="https://github.com/MMurilloP/Lading_WELKHOMEtech"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub className="logo-github" />
+          </a>
         </li>
       </ul>
     </nav>

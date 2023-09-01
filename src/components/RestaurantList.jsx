@@ -13,6 +13,11 @@ const RestaurantList = ({ restaurants, onSelectRestaurant }) => {
             className="restaurant-list-item"
             key={restaurant.id}
             onClick={() => onSelectRestaurant(restaurant)}
+            style={{
+              backgroundImage: `url(${restaurant.img})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
           >
             <h3 className="restaurant-name">{restaurant.name}</h3>
           </li>

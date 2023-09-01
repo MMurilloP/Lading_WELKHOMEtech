@@ -8,7 +8,6 @@ import Footer from "./components/Footer";
 
 const App = () => {
   const [selectedRestaurant, setSelectedRestaurant] = useState(null);
-  const [selectedRestaurantImage, setSelectedRestaurantImage] = useState(null);
 
   const restaurants = [
     {
@@ -50,24 +49,18 @@ const App = () => {
 
   const handleSelectRestaurant = (restaurant) => {
     setSelectedRestaurant(restaurant);
-    setSelectedRestaurantImage(restaurant.img);
   };
 
   return (
-    <>
-      <header>
-        <NavBar />
-      </header>
-      <main
-        className="app-container"
-        style={{ backgroundImage: `url(${selectedRestaurantImage})` }}
-      >
-        <h1 className="app-title">SaborExplorer</h1>
+    <div className="app-wrapper">
+      <NavBar />
+      <main className="app-container">
         <div className="app-content">
           <RestaurantList
             restaurants={restaurants}
             onSelectRestaurant={handleSelectRestaurant}
           />
+
           <RestaurantDetails selectedRestaurant={selectedRestaurant} />
         </div>
         <div className="background-video">
@@ -76,10 +69,8 @@ const App = () => {
           </video>
         </div>
       </main>
-      <footer>
-        <Footer />
-      </footer>
-    </>
+      <Footer />
+    </div>
   );
 };
 

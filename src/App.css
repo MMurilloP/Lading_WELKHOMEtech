@@ -1,22 +1,20 @@
 .app-container {
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-}
-
-.app-title {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .app-content {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 20px;
+  gap: 100px;
 }
 
 .background-video {
@@ -27,6 +25,9 @@
   height: 100%;
   z-index: -1;
   overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .background-video video {
@@ -46,7 +47,9 @@
   }
 
   .app-content {
+    margin-top: 20rem;
     flex-direction: column;
     align-items: center;
+    gap: 0rem;
   }
 }
